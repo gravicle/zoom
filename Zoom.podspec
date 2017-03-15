@@ -21,7 +21,4 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'zoom-ios-mobilertc/lib/MobileRTC.framework'
   s.resources ='lib/MobileRTCResources.bundle'
   s.frameworks = [ 'MobileRTC', 'VideoToolbox' ]
-  s.ios.xcconfig = { 
-        'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Zoom/MobileRTC.embeddedframework/**"'
-  }
 end
