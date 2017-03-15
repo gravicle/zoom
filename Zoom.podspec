@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.version = '1.0.2'
 
   s.source = {
-    :git => 'https://github.com/gravicle/zoom',
-    :tag => 'v1'
+    :git => 'https://github.com/gravicle/zoom.git',
+    :tag => 'v1.0.2'
   }
 
   s.platform = :ios
