@@ -8,8 +8,9 @@ Pod::Spec.new do |s|
   s.platforms = {:ios => '7.0'}
   s.source = {:http => 'https://github.com/gravicle/zoom/raw/master/zoom-ios-mobilertc.zip'}
   s.summary = 'ZOOM iOS SDK'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.source_files = 'zoom-ios-mobilertc/lib/MobileRTC.framework/Headers/*.h'
   s.public_header_files = 'zoom-ios-mobilertc/lib/MobileRTC.framework/Headers/*.h'
   s.vendored_frameworks = 'zoom-ios-mobilertc/lib/MobileRTC.framework'
+  s.resources ='zoom-ios-mobilertc/lib/MobileRTCResources.bundle'
 end
