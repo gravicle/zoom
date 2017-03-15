@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.version = '1.0.2'
 
   s.source = {
-    :git => 'https://github.com/gravicle/zoom'
-    :branch => 'master'
+    :git => 'https://github.com/gravicle/zoom',
+    :tag => 'v1'
   }
 
   s.platform = :ios
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source_files = 'lib/MobileRTC.framework/Headers/*.{h}'
   s.ios.header_dir = 'lib/MobileRTC'
   s.public_header_files = 'lib/MobileRTC.framework/Headers/*.h'
-  s.vendored_frameworks = 'zoom-ios-mobilertc/lib/MobileRTC.framework'
+  s.vendored_frameworks = 'lib/MobileRTC.framework'
   s.resources ='lib/MobileRTCResources.bundle'
   s.frameworks = [ 'MobileRTC', 'VideoToolbox' ]
 end
