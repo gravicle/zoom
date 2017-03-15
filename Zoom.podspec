@@ -1,34 +1,15 @@
-{
-  "author": "Amit Jain",
-  "frameworks": [
-    "VideoToolbox"
-  ],
-  "homepage": "https://get.fabric.io/crashlytics",
-  "libraries": [
-    "sqlite3",
-    "stdc++",
-    "z"
-  ],
-  "license": {
-    "text": "",
-    "type": "Commercial"
-  },
-  "name": "Zoom",
-  "platforms": {
-    "ios": "7.0"
-  },
-  "preserve_paths": [
-    "MobileRTCResources.bundle/*",
-    "MobileRTC.framework/*"
-  ],
-  "source": {
-    "http": "https://kit-downloads.fabric.io/cocoapods/crashlytics/3.8.4/crashlytics.zip"
-  },
-  "summary": "ZOOM iOS SDK",
-  "version": "1.0",
-  "ios": {
-    "source_files": "lib/MobileRTC.framework/Headers/*.h",
-    "public_header_files": "lib/MobileRTC.framework/Headers/*.h",
-    "vendored_frameworks": "lib/MobileRTC.framework"
-  }
-}
+Pod::Spec.new do |s|
+  s.author = 'Amit Jain'
+  s.frameworks = [ 'VideoToolbox' ]
+  s.homepage = 'https://get.fabric.io/crashlytics'
+  s.libraries = ['sqlite3', 'stdc++.6.0.9', 'z.1.2.5']
+  s.license = { :text => '', :type => 'Commercial' }
+  s.name = 'Zoom'
+  s.platforms = {:ios => '7.0'}
+  s.source = {:http => 'https://github.com/gravicle/zoom/raw/master/zoom-ios-mobilertc.zip'}
+  s.summary = 'ZOOM iOS SDK'
+  s.version = '1.0.0'
+  s.source_files = 'zoom-ios-mobilertc/lib/MobileRTC.framework/Headers/*.h'
+  s.public_header_files = 'zoom-ios-mobilertc/lib/MobileRTC.framework/Headers/*.h'
+  s.vendored_frameworks = 'zoom-ios-mobilertc/lib/MobileRTC.framework'
+end
